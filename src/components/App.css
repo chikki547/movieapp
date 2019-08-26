@@ -1,0 +1,212 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height:10vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  font-size: calc(30px + 2vmin);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100%;
+  top:0;
+  z-index: 99;
+}
+
+#logout{
+  display: flex;
+  position:fixed;
+  right:10px;
+  align-items: center;
+ 
+  justify-content: center;
+}
+#logout > button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding:10px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+ 
+}
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.App-Main{
+  background-color: rgb(74, 76, 80);
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.login-register input[type="radio"] + label {
+  background-color: rgb(181, 181, 216); 
+}
+.login-register{
+  background-color: rgb(243, 241, 241);
+  padding-top:21px;
+  border-radius: 1vh;
+  width: 300px;
+  min-height: 52px;
+}
+.login-register > input{
+  
+
+  display: inline-block;
+  width: 200px;
+  border: solid 2px #ccc;
+  display:none;
+
+}
+
+
+.login-register > label{
+  
+  padding-bottom: 30px;
+  padding-left:21%;
+  padding-right:10%;
+  padding-top:20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.login-box{
+  
+ 
+  display: flex;
+  width: 300px;
+  height:350px;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+.signup-box{
+  display: flex;
+  width: 300px;
+  height:400px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.login-form,.signup-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 50vh;
+  padding: 20px;
+  
+}
+
+
+.login-form > input , .signup-form > input{
+
+  padding: 12px 20px;
+  width: 82%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+
+.login-form > button,.signup-form> button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  width:100%;
+  padding:20px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+
+.Footer{
+  background-color:#282c34;
+  height: 7vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width:100%;
+  z-index: 99;
+  bottom:0; 
+}
+
+.Dashboard{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  padding-bottom: 15px;
+  padding: 10px;
+  padding-top: 12vh; 
+}
+.graphs{
+  display:flex;
+  flex-direction: column;
+  padding: 20px;
+  margin:10px;
+  background-color:white;
+  font-family: cursive;
+  height:350;
+}
+
+.movie{
+  display:flex;
+  flex-direction: row;
+
+}
+.list {
+  margin:10px;
+  display:flex;
+  flex-direction: column;
+  padding: 75px;
+  background-color:white;
+  color:blue;
+  width:440px;
+  font-family: cursive;
+}
+
+.list > li {
+  font-family: cursive;
+  margin:10px;
+  color:black;
+}
+
